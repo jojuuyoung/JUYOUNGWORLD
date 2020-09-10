@@ -29,53 +29,53 @@
 
     <div id="fullpage">
         <!-- main visual section -->
-        <section class="section main">
-            <p class="main-tit">2020</p>
-            <p class="main-tit02">I hope to meet you soon<br><i>@publisher</i></p>
-            <p class="main-tit03">welcome to<br>ju young<br>world !</p>
+        <section class="section main" id="main">
+            <p class="main-txt">2020</p>
+            <p class="main-txt02">I hope to meet you soon<br><i>@publisher</i></p>
+            <p class="main-txt03">welcome to<br>ju young<br>world !</p>
             <div class="circle-wrap">
-                <div class="circle-bg"><span class="">circle 배경이미지</span></div>
-                <ul class="circle-txt">
-                    <li class="txt">W</li>
-                    <li class="txt02">E</li>
-                    <li class="txt03">B</li>
-                    <li class="txt04">&middot;</li>
-                    <li class="txt05">P</li>
-                    <li class="txt06">U</li>
-                    <li class="txt07">B</li>
-                    <li class="txt08">L</li>
-                    <li class="txt09">I</li>
-                    <li class="txt10">S</li>
-                    <li class="txt11">H</li>
-                    <li class="txt12">E</li>
-                    <li class="txt13">R</li>
-                    <li class="txt14">&middot;</li>
+                <div class="circle-bg"><span class="hide">circle 배경 이미지</span></div>
+                <ul class="circle-tit">
+                    <li class="tit">W</li>
+                    <li class="tit02">E</li>
+                    <li class="tit03">B</li>
+                    <li class="tit04">&middot;</li>
+                    <li class="tit05">P</li>
+                    <li class="tit06">U</li>
+                    <li class="tit07">B</li>
+                    <li class="tit08">L</li>
+                    <li class="tit09">I</li>
+                    <li class="tit10">S</li>
+                    <li class="tit11">H</li>
+                    <li class="tit12">E</li>
+                    <li class="tit13">R</li>
+                    <li class="tit14">&middot;</li>
                 </ul>
             </div>
         </section>
         <!--// main visual section -->
         
         <!-- who 자기소개 section -->
-        <section class="section about">
+        <section class="section about" id="about">
             <h1 class="section-tit">about me</h1>
             <div class="about-txt">
                 <p>조주영 JoJuYoung .920510</p>
                 <p>단국대 경영학과 #웹디자인기능사</p>
                 <p>강남 굿잡아카데이 수료</p>
                 <p>19.09 ~ 20.05 웹에이전시 더넷 근무</p>
-                <p class="about-mark">ABOUT JUYOUNG</p>
+                <p class="txt-mark">ABOUT JUYOUNG</p>
             </div>
         </section>
         <!--// who 자기소개 section -->
 
         <!-- skill 소개 section -->
-        <section class="section skill">
+        <section class="section skill" id="skill">
             <h1 class="section-tit">skill(수정중)</h1>
         </section>
         <!--// skill 소개 section -->
 
         <!-- 포트폴리오 project section -->
-        <section class="section project">
+        <section class="section project" id="project">
             <h1 class="section-tit">project is</h1>
             <!-- swiper-container -->
             <div class="swiper-container">
@@ -91,33 +91,32 @@
                 <div class="swiper-button-prev"></div>
             </div>
             <!--// swiper-container -->
-
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper('.swiper-container', {
-                    //loop:true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'fraction',
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-            </script>
-            <!--// Initialize Swiper -->
-        </section>    
+        </section>
         <!--// 포트폴리오 project section -->
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                //loop:true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <!--// Initialize Swiper -->
 
         <!-- 연락처 contact section -->
-        <section class="section contact">
+        <section class="section contact" id="contact">
             <h1 class="section-tit">watching for<br>thank you<i>!</i></h1>
-            <div class="call-txt">
-                <p>SENDME<a href="mailto:jojuuyoung@naver.com" target="_blank" class="">&nbsp;@EMAIL</a></p>
-                <p><a href="tel:010-2456-3353" class="">01024563353</a>&nbsp;CALL</p>
-                <p class="copyright">WebSite by JuYoung</p>
+            <div class="contact-txt">
+                <p class="txt">SENDME<a href="mailto:jojuuyoung@naver.com" target="_blank" class="txt-mail">&nbsp;@EMAIL</a></p>
+                <p class="txt"><a href="tel:010-2456-3353" class="txt-number">01024563353</a>&nbsp;CALL</p>
             </div>
+            <p class="copyright">WebSite by JuYoung</p>
         </section>
         <!--// 연락처 contact section -->
     </div>
