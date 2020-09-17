@@ -35,7 +35,7 @@ blockquote, q{quotes:none;}
 blockquote:before, blockquote:after,
 q:before, q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
-.hide, caption, legend{line-height:0;font-size:1px;overflow:hidden;}
+caption, legend{line-height:0;font-size:1px;overflow:hidden;}
 hr{display:none;}
 a{color:#000;text-decoration:none;}
 a:hover, a:focus, a:active, a:link, a:visited{text-decoration:none;color:inherit;}
