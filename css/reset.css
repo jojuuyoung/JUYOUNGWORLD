@@ -39,3 +39,6 @@ caption, legend{line-height:0;font-size:1px;overflow:hidden;}
 hr{display:none;}
 a{color:#000;text-decoration:none;}
 a:hover, a:focus, a:active, a:link, a:visited{text-decoration:none;color:inherit;}
+
+*::selection {color:#fff; background:#e93e7f;}
+*::-moz-selection {color:#fff; background:#e93e7f;}
