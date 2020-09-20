@@ -20,7 +20,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font-family:'Montserrat','NotoKr',sans-serif;color: #fff;vertical-align:baseline;}
 html, body{width:100%;height:100%;line-height:1;}
 html{-webkit-touch-callout:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);/*-webkit-user-select:none;-*/}
 body{width:100%;background:#fff;min-width:320px;-webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
