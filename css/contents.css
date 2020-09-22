@@ -50,6 +50,18 @@ section::after{
     font-family: 'Rubik',sans-serif;
     font-weight: 500;
 }
+/* 페이지 큰 타이틀 */
+.section-tit{
+    position: absolute;
+    top: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    font-weight: 500;
+    font-size: 27px;
+    text-align: center;
+    letter-spacing: -1px;
+}
 
 /* //mark: main section */
 .main{
@@ -89,25 +101,23 @@ section::after{
 }
 .circle-bg{
     position: absolute;
-    
-    /* top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%); */
     z-index: 99;
-    width: 50vw;
-    height: 50vw; /*height: 100vh;*/
+    width: 49vw;
+    height: 49vw; /*height: 100vh;*/
     background-image: url(../img/circle_bg.png), url(../img/circle_imog.png);
     background-size: 100%, 40%;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
 }
 .circle-tit{
-    position: relative;
+    position: relative;/*circle-tit li 기준점*/
+    /* width: 49vw;
+    height: 49vw; */
     animation-name: circletit;
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    font-size: 4.1vw;
 }
 /* @keyframes circletit{
     100%{ transform: rotate(360deg); }
@@ -117,11 +127,84 @@ section::after{
     top: 0;
     left: 0;
     z-index: 99;
-    font-size: 4.1vw;
     font-family: 'Montserratcall';
     font-weight: 500;
-    color: #fff;
-    /* font-size:2em; */
-    transform-origin: center
-
+    color: #000;
+    font-size:2em;
+    /* transform-origin: center; */
+}
+.circle-tit .tit{
+    transform: rotate(5.73rad);
+    top: -2.3em; /*84px*/
+    left: -1.71em; /*196px*/
+}
+.circle-tit .tit02{
+    top: 0; /*33px*/
+    left: -0.33em; /*408px*/
+    top: -2.65em;
+}
+.circle-tit .tit03{
+    transform: rotate(6.75rad);
+    top: -2.4em; /*72px*/
+    left: 0.62em; /*555px*/
+}
+.circle-tit .tit04{
+    font-size: 3em;
+    top: -1.53em; /*69px*/
+    left: 1.05em; /*153px*/
+}    
+.circle-tit .tit05{
+    transform: rotate(13.8rad);
+    right: -2.445em; /*83px*/
+    top: -1.13em; /*267px*/
+}
+.circle-tit .tit06{
+    transform: rotate(14.27rad);
+    right: -2.575em; /*65px*/
+    top: -0.13em; /*420px*/
+}
+.circle-tit .tit07{
+    transform: rotate(14.78rad);
+    right: -2.15em; /*131px*/
+    top: 0.95em; /*576px*/
+}
+.circle-tit .tit08{
+    transform: rotate(15.22rad);
+    right: 1.68em; /*256px*/
+    bottom: 0.338em;
+    /* top: 4.42em;  */
+}
+.circle-tit .tit09{
+    transform: rotate(12.46rad);
+    /* bottom: 37px; */
+    top: 4.65em;
+    right: 2.6em; /*397px*/
+}
+.circle-tit .tit10{
+    transform: rotate(12.8rad);
+    /* bottom: 50px; */
+    top: 4.57em;
+    left: 2.04em; /*310px*/
+}
+.circle-tit .tit11{
+    transform: rotate(13.36rad);
+    /* bottom: 139px; */
+    left: 1.029em; /*154px*/
+    top: 4em;
+}
+.circle-tit .tit12{
+    transform: rotate(4.43rad);
+    /* bottom: 281px; */
+    top: 3.07em;
+    left: 0.55em; /*83px*/
+}
+.circle-tit .tit13{
+    transform: rotate(4.9rad);
+    top: 2.04em; /*312px*/
+    left: 0.48em; /*71px*/
+}
+.circle-tit .tit14{
+    font-size: 3em;
+    top: 0.53em; /*115px*/
+    left: 0.64em; /*146px*/
 }

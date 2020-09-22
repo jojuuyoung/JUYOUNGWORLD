@@ -40,5 +40,5 @@ hr{display:none;}
 a{color:#000;text-decoration:none;}
 a:hover, a:focus, a:active, a:link, a:visited{text-decoration:none;color:inherit;}
 
-*::selection {color:#fff; background:#e93e7f;}
-*::-moz-selection {color:#fff; background:#e93e7f;}
+*::selection {color:#fff; background:#e9600c;}
+*::-moz-selection {color:#fff; background:#e9600c;}
