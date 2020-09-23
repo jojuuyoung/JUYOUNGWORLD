@@ -122,9 +122,9 @@ section::after{
     font-size: 4.1vw;
 }
 /* circle-tit 360회전 애니메이션 */
-/* @keyframes circletit{
+@keyframes circletit{
     100%{ transform: rotate(360deg); }
-} */
+}
 .circle-tit li{
     position: absolute;
     z-index: 99;
@@ -201,3 +201,10 @@ section::after{
     top: 0.64em;
     left: 0.64em;
 }
+/* //mark: about section */
+
+/* //mark: skill section */
+
+/* //mark: project section */
+
+/* //mark: contact section */
