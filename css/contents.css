@@ -11,6 +11,7 @@
 /* 섹션 전체 배경 그리드 */
 section{
     max-width: 2000px;
+    background-image: url(/img/noise_bg.png);
 }
 section::before,
 section::after{
@@ -28,7 +29,10 @@ section::before{
 section::after{
     right: 23vw;
 }
-
+/* 풀페이지 오른쪽 도트 네비게이션 */
+#fp-nav{
+    display: none;
+}
 /* 주영월드 title bar */
 .title-box{
     display: flex;
@@ -46,7 +50,7 @@ section::after{
     height: 45px;
     background-color: #fff;
 }
-.title-name{
+.title-name,.scroll-text{
     font-family: 'Rubik',sans-serif;
     font-weight: 500;
 }
@@ -61,6 +65,18 @@ section::after{
     font-size: 27px;
     text-align: center;
     letter-spacing: -1px;
+}
+.scroll-text{
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 13px;
+    color: #fff;
+    transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    -ms-transform: rotate(-270deg);
 }
 
 /* //mark: main section */
@@ -103,7 +119,7 @@ section::after{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 99;
+    z-index: 77;
     width: 49vw;
     height: 49vw;
     background-image: url(../img/circle_bg.png), url(../img/circle_imog.png);
@@ -113,6 +129,7 @@ section::after{
 }
 .circle-tit{
     position: relative;/*circle-tit li 기준점*/
+    z-index: 99;
     width: 49vw;
     height: 49vw;
     animation-name: circletit;
@@ -130,10 +147,9 @@ section::after{
 }
 .circle-tit li{
     position: absolute;
-    z-index: 99;
     font-family: 'Montserratcall',sans-serif;
     font-weight: 500;
-    font-size:2em;
+    font-size: 2em;
     color: #333;
 }
 .circle-tit .tit{
@@ -263,5 +279,165 @@ section::after{
 /* //mark: skill section */
 
 /* //mark: project section */
-
+.swiper-container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #fff; */
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/noise_bg.png);
+}
+.swiper-inner::before,
+.swiper-inner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+}
+.swiper-inner::before{
+    left: 23vw;
+}
+.swiper-inner::after{
+    right: 23vw;
+}
+.swiper-inner.stayjungle{
+    background-color: #ffa141;
+}
+.swiper-inner.hyundai{
+    background-color: #5490d8;
+}
+.swiper-inner.hanssem{
+    background-color: #e14e5e;
+}
+.img-box{
+    position: relative;
+    z-index: 99;
+    width: 35vw;
+    height: 35vw;
+    cursor: pointer;
+}
+.img-box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.img-box a img{
+    width: 100%;
+    -webkit-transition: -webkit-transform ease .5s;
+    transition: -webkit-transform ease .5s;
+    transition: transform ease .5s;
+}
+.img-box:hover a img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.txt-box{
+    position: relative;
+    z-index: 99;
+    padding-left: 8vw;
+    box-sizing: border-box;
+}
+.txt-box p{
+    display: block;
+    text-align: left;
+    color: #333;
+}
+.txt-box .project-tit{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.txt-box .project-txt{
+    font-size: 56px;
+    line-height: 1.3;
+}
+.txt-box .project-link{
+    position: relative; /*.tit::after 기준점*/
+    font-size: 56px;
+    z-index: 99;
+}
+.txt-box .project-link::after{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 15px;
+    background-color: #333;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+}
+.txt-box:hover .project-link::after{
+    width: 67%;
+    transition:width 0.5s; 
+    -webkit-transition:width 0.5s; 
+    -ms-transition:width 0.5s;
+}
+.txt-box:hover .project-link::after{
+    width: 80%;
+}
+.txt-box .project-link > .link-border{
+    position: relative; /*tit::after보다 위로 올릴려고 줌*/
+    z-index: 99;
+    display: block;
+    width: auto;
+    color: #333;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+.txt-box:hover .project-link > .link-border{
+    color: #fff;
+}
+.txt-box .project-txt02{
+    margin-top: 15px;
+    opacity: 0.8;
+    line-height: 1.8;
+}
+/* 스와이퍼 버튼 */
+.swiper-button-next{
+    right: 100px !important;
+}
+.swiper-button-prev{
+    left: 100px !important;
+}
+/* 스와이퍼 페이지 숫자뷰 */
+.swiper-pagination{
+    text-align: right !important;
+    right: 17.5% !important;
+    bottom: 24% !important;
+    color: #333 !important;
+}
+.swiper-pagination-current{
+    font-size: 40px !important;
+}
+.swiper-pagination-current,.swiper-pagination-total{
+    color: #333 !important;
+    font-weight: 700 !important;
+    font-family: 'Rubik','NotoKr',sans-serif !important;
+}
 /* //mark: contact section */
