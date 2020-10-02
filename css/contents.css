@@ -50,7 +50,8 @@ section::after{
     height: 45px;
     background-color: #fff;
 }
-.title-name,.scroll-text{
+.title-name,
+.scroll-text{
     font-family: 'Rubik',sans-serif;
     font-weight: 500;
 }
@@ -78,8 +79,25 @@ section::after{
     transform: rotate(-270deg);
     -webkit-transform: rotate(-270deg);
     -ms-transform: rotate(-270deg);
+    animation: blink 7s ease-in-out infinite;
+    -webkit-animation: blink 7s ease-in-out infinite;
 }
-
+@keyframes blink{
+    0% {opacity: 1;}
+    20% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    80% {opacity: 1;}
+    100% {topacity: 0;}
+}
+@-webkit-keyframes blink{
+    0% {opacity: 1;}
+    20% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    80% {opacity: 1;}
+    100% { topacity: 0; }
+}
 /* //mark: main section */
 .main{
     position: relative;
@@ -133,17 +151,14 @@ section::after{
     z-index: 99;
     width: 49vw;
     height: 49vw;
-    animation-name: circletit;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
     font-size: 4.1vw;
-}
-/* circle-tit 360회전 애니메이션 */
-@-webkit-keyframes circletit{
-    100% {transform: rotate(360deg);}
+    animation: circletit 30s linear infinite;
+    -webkit-animation: circletit 30s linear infinite;
 }
 @keyframes circletit{
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes circletit{
     100% {transform: rotate(360deg);}
 }
 .circle-tit li{
@@ -244,25 +259,8 @@ section::after{
     background-image: url(/img/icon_about.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    animation: aboutswing 2s infinite;
     -webkit-animation: aboutswing 2s infinite;
-    animation: aboutswing 2s infinite
-}
-.about-txt p{
-    z-index: 99;
-    text-align: center;
-    font-size: 4.5vw;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #333;
-}
-/* about-txt 스마일 이모티콘 애니메이션 */
-@-webkit-keyframes aboutswing{
-    0% {transform: rotate(0deg);}
-    20% {transform: rotate(13deg);}
-    24% {transform: rotate(-13deg);}
-    28% {transform: rotate(13deg);}
-    32% {transform: rotate(-13deg);}
-    36% {transform: rotate(0deg);}
 }
 @keyframes aboutswing{
     0% {transform: rotate(0deg);}
@@ -271,6 +269,23 @@ section::after{
     28% {transform: rotate(13deg);}
     32% {transform: rotate(-13deg);}
     36% {transform: rotate(0deg);}
+}
+@-webkit-keyframes aboutswing{
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(13deg);}
+    24% {transform: rotate(-13deg);}
+    28% {transform: rotate(13deg);}
+    32% {transform: rotate(-13deg);}
+    36% {transform: rotate(0deg);}
+}
+.about-txt p{
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    font-size: 4.5vw;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #333;
 }
 .about-txt .txt-mark{
     font-size: 18px;
@@ -306,26 +321,17 @@ section::after{
     align-items: center;
 }
 .swiper-inner{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     background-image: url(../img/noise_bg.png);
 }
-/* .swiper-inner.stayjungle{
-    background-color: #ffa141;
-}
-.swiper-inner.hyundai{
-    background-color: #5490d8;
-}
-.swiper-inner.hanssem{
-    background-color: #e14e5e;
-} */
 .img-box{
+    width: 50%;
     display: flex;
     justify-content: flex-end;
-    width: 50%;
     overflow: hidden;
 }
 .img-box a{
@@ -345,37 +351,51 @@ section::after{
 }
 .txt-box{
     width: 50%;
-    padding-left: 5.5vw;
+    padding-left: 7.5vw;
     box-sizing: border-box;
     line-height: 1.35;
 }
 .txt-box p{
     text-align: left;
     color: #333;
-    font-weight: 700;
 }
-.txt-box .project-txt,
-.txt-box .project-link{
+.txt-box .project-tit{
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-style: italic;
+}
+.txt-box .project-txt{
     font-size: 56px;
 }
 .txt-box .project-link{
-    position: relative; /*.tit::after 기준점*/
+    position: relative;
+    display: block;
+    width: auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    font-size: 56px;
 }
 .txt-box .project-link::after{
-    position: absolute;
-    z-index: 99;
-    top: 50%;
-    display: inline-block;
     content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
     width: 0;
-    height: 0.4vw;
+    height: 15px;
     background-color: #333;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
 }
 .txt-box:hover .project-link::after{
+    width: 38%;
+    height: 15px;
+    transition:width 0.5s; 
+    -webkit-transition:width 0.5s; 
+    -ms-transition:width 0.5s;
+}
+.hyundai .txt-box:hover .project-link::after{
     width: 50%;
-    height: 0.4vw;
+    height: 15px;
     transition:width 0.5s; 
     -webkit-transition:width 0.5s; 
     -ms-transition:width 0.5s;
@@ -385,15 +405,21 @@ section::after{
     z-index: 99;
     display: block;
     width: auto;
-    color: #333;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
 }
-.txt-box:hover .project-link > .link-border{
-    color: #333;
+.stayjungle .txt-box .project-link{
+    color: #ffa141;
 }
-.txt-box .project-txt02{
-    opacity: 0.8;
+.hyundai .txt-box .project-link{
+    color: #5490d8;
+}
+.hanssem .txt-box .project-link{
+    color: #e14e5e;
+}
+.txt-box .project-skill{
+    margin-top: 20px;
+    font-weight: 500;
 }
 /* 스와이퍼 버튼 */
 .swiper-button-next{
@@ -412,7 +438,8 @@ section::after{
 .swiper-pagination-current{
     font-size: 40px !important;
 }
-.swiper-pagination-current,.swiper-pagination-total{
+.swiper-pagination-current,
+.swiper-pagination-total{
     color: #333 !important;
     font-weight: 700 !important;
     font-family: 'Rubik','NotoKr',sans-serif !important;
@@ -463,7 +490,6 @@ section::after{
     animation: heartbeat 2s infinite;
     -webkit-animation: heartbeat 2s infinite;
 }
-/*❣️❤️🧡💛💚💜💙🖤💖 🧡💛💚💙💜🖤🤍🤎✌🏻*/
 .copyright{
     position: absolute;
     bottom: 5%;
@@ -474,10 +500,11 @@ section::after{
     font-size: 18px;
 }
 @keyframes heartbeat{
-    0%{ transform: scale(.9); }
-    20%{ transform: scale(1.2); }
-    40%{ transform: scale(.9); }
-    60%{ transform: scale(1.2); }
-    80%{ transform: scale(.9); }
-    100%{ transform: scale(.9); }
+    0% {transform: scale(.9);}
+    20% {transform: scale(1.2);}
+    40% {transform: scale(.9);}
+    60% {transform: scale(1.2);}
+    80% {transform: scale(.9);}
+    100% {transform: scale(.9);}
 }
+/*❣️❤️🧡💛💚💜💙🖤💖 🧡💛💚💙💜🖤🤍🤎✌🏻*/
