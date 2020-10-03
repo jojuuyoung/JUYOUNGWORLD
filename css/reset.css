@@ -23,7 +23,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font-family:'Montserrat','NotoKr',sans-serif;color: #fff;vertical-align:baseline;}
 html, body{width:100%;height:100%;line-height:1;}
 html{-webkit-touch-callout:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);/*-webkit-user-select:none;-*/}
-body{width:100%;background:#fff;min-width:320px;-webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body{width:100%;background:#fff;min-width:320px;-webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;cursor:url(/img/cursor-pointer.png),auto;}
 main, article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section{display:block;}
 ol, ul, li, dl{list-style:none;}
@@ -37,7 +37,7 @@ q:before, q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 caption, legend{line-height:0;font-size:1px;overflow:hidden;}
 hr{display:none;}
-a{color:#000;text-decoration:none;}
+a{color:#000;text-decoration:none;cursor:url(/img/cursor-hand.png),auto;}
 a:hover, a:focus, a:active, a:link, a:visited{text-decoration:none;color:inherit;}
 
 *::selection {color:#fff; background:#e9600c;}
