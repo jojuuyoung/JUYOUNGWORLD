@@ -95,3 +95,31 @@
     local('Montserrat-Bold'), 
     url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
 }
+/* 대문자 영문 폰트 */
+@font-face {
+    font-family: SctoGroteskA;
+    font-weight: 300;
+    font-display: swap;
+    src: local("SctoGroteskA"),
+    url(../font/SctoGroteskA-Regular.woff2) format("woff2"),
+    url(../font/SctoGroteskA-Regular.woff) format("woff"),
+    url(../font/SctoGroteskA-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: SctoGroteskA;
+    font-weight: 400;
+    font-display: swap;
+    src: local("SctoGroteskA"),
+    url(../font/SctoGroteskA-Medium.woff2) format("woff2"),
+    url(../font/SctoGroteskA-Medium.woff) format("woff"),
+    url(../font/SctoGroteskA-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: SctoGroteskA;
+    font-weight: 700;
+    font-display: swap;
+    src: local("SctoGroteskA"),
+    url(../font/SctoGroteskA-Bold.woff2) format("woff2"),
+    url(../font/SctoGroteskA-Bold.woff) format("woff"),
+    url(../font/SctoGroteskA-Bold.ttf) format("truetype");
+}

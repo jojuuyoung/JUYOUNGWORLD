@@ -54,6 +54,7 @@ section::after{
 .scroll-text{
     font-family: 'Rubik',sans-serif;
     font-weight: 500;
+    color: #fff;
 }
 /* 오른쪽 스크롤다운 텍스트 */
 .scroll-text{
@@ -63,7 +64,6 @@ section::after{
     transform: translateY(-50%);
     right: 0;
     font-size: 13px;
-    color: #fff;
     transform: rotate(-270deg);
     -webkit-transform: rotate(-270deg);
     -ms-transform: rotate(-270deg);
@@ -86,6 +86,25 @@ section::after{
     80% {opacity: 1;}
     100% { topacity: 0; }
 }
+.smile-ani{
+    position: fixed;
+    display: block;
+    width: 180px;
+    height: 180px;
+    right: -2%;
+    bottom: -4%;
+    z-index: 99;
+    animation: smileani 10s linear infinite;
+    -webkit-animation: smileani 10s linear infinite;;
+ }
+@keyframes smileani{
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+.smile-ani img{
+    width: 100%;
+    height: 100%;
+}
 /* 섹션 페이지 큰 타이틀 */
 .section-tit{
     position: absolute;
@@ -97,6 +116,11 @@ section::after{
     font-size: 28px;
     text-align: center;
     letter-spacing: -1px;
+    color: #fff;
+    /* font-family: 'SctoGroteskA',sans-serif; */
+}
+.section-tit i{
+    color: #fff;
 }
 /* //mark: main section */
 .main{
@@ -107,6 +131,7 @@ section::after{
     z-index: 99;
     font-size: 19px;
     line-height: 1.3;
+    color: #fff;
 }
 .main-txt{
     top: 50%;
@@ -115,6 +140,9 @@ section::after{
 .main-txt02{
     top: 10%;
     right: 12vw;
+}
+.main-txt02 i{
+    color: #fff;
 }
 .main-txt03{
     bottom: 22%;
@@ -166,7 +194,6 @@ section::after{
     font-family: 'Montserratcall',sans-serif;
     font-weight: 500;
     font-size: 2em;
-    color: #333;
 }
 .circle-tit .tit{
     transform: rotate(5.73rad);
@@ -285,7 +312,6 @@ section::after{
     font-size: 4.5vw;
     font-weight: 700;
     line-height: 1.2;
-    color: #333;
 }
 /* .about-txt .txt-mark{
     font-size: 18px;
@@ -357,7 +383,6 @@ section::after{
 }
 .swiper-txt p{
     text-align: left;
-    color: #333;
 }
 .swiper-txt .tit{
     margin-bottom: 15px;
@@ -383,7 +408,7 @@ section::after{
     top: 50%;
     width: 0;
     height: 10px;
-    background-color: #333;
+    background-color: #252422;;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
 }
@@ -411,14 +436,14 @@ section::after{
     text-align: right !important;
     right: 17.5% !important;
     bottom: 24% !important;
-    color: #333 !important;
+    color: #252422 !important;
 }
 .swiper-pagination-current{
     font-size: 40px !important;
 }
 .swiper-pagination-current,
 .swiper-pagination-total{
-    color: #333 !important;
+    color: #252422 !important;
     font-weight: 700 !important;
     font-family: 'Rubik','NotoKr',sans-serif !important;
 }
@@ -438,7 +463,6 @@ section::after{
     font-weight: bold;
     font-size: 8.35vw;
     line-height: 1.3;
-    color: #333;
 }
 .contact-txt p:first-child{
     font-size: 8.65vw;
@@ -450,7 +474,7 @@ section::after{
     color: #fff;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #333;
+    -webkit-text-stroke-color: #252422;
 }
 .contact-txt .txt-mail:hover,
 .contact-txt .txt-number:hover{
@@ -473,9 +497,9 @@ section::after{
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    color: #000;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
+    color: #000;
 }
 @keyframes heartbeat{
     0% {transform: scale(.9);}
