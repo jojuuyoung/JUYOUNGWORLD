@@ -8,6 +8,9 @@
 /****************************************/
 
 /* //mark: 공통 */
+.hide{
+    display: none;
+}
 /* 섹션 전체 배경 그리드 */
 section{
     max-width: 2000px;
@@ -389,7 +392,7 @@ section::after{
     font-weight: 900;
     font-style: italic;
 }
-.swiper-txt .txt{
+.swiper-txt .info{
     font-size: 56px;
 }
 .swiper-txt .link{
@@ -418,7 +421,7 @@ section::after{
     -webkit-transition:width 0.5s; 
     -ms-transition:width 0.5s;
 }
-.swiper-txt .info{
+.swiper-txt .txt{
     margin-top: 20px;
     font-weight: 500;
 }
