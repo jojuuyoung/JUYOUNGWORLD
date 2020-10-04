@@ -586,7 +586,7 @@ section::after{
     .about-txt p{font-size: 6.2vw;}
     .about-txt p:first-child::before {width: 9vw;height: 9vw;}
     .swiper-container{width: 90vw;height: 88vh;}
-    .swiper-txt{padding: 10vw 7vw;line-height: 1.5;}
+    .swiper-txt{padding: 6vw 7vw;}
     .swiper-txt .tit{font-size: 16px;}
     .swiper-txt .txt{font-size: 14px;}
     .swiper-txt .info,.swiper-txt .link{font-size: 8.5vw}
