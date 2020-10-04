@@ -94,8 +94,8 @@ section::after{
     display: block;
     width: 180px;
     height: 180px;
-    right: -2%;
-    bottom: -4%;
+    right: -3vw;
+    bottom: -3vw;
     z-index: 99;
     animation: smileani 10s linear infinite;
     -webkit-animation: smileani 10s linear infinite;;
@@ -393,10 +393,12 @@ section::after{
     font-style: italic;
 }
 .swiper-txt .info{
-    font-size: 56px;
+    font-size: 3vw;
+    /* font-size: 56px; */
 }
 .swiper-txt .link{
-    font-size: 56px;
+    font-size: 3vw;
+    /* font-size: 56px; */
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
 }
@@ -513,3 +515,34 @@ section::after{
     100% {transform: scale(.9);}
 }
 /*❣️❤️🧡💛💚💜💙🖤💖 🧡💛💚💙💜🖤🤍🤎✌🏻*/
+
+/*가로값이 768px이상 1023px이하 일 때 스타일 적용! 1024px이상은 기본 css적용 */
+@media all and (max-width:1023px){
+    .smile-ani{width: 160px;height: 160px;right: -5vw;bottom: -5vw;}
+    .main p{font-size: 17px;}
+    .circle-bg{width: 53vw;height: 53vw;}
+    .circle-tit{width: 53vw;height: 53vw;font-size: 4.45vw;}
+    .section-tit{font-size: 25px;}
+    .about-txt p:first-child::before{width: 6vw;height: 6vw;}
+    .about-txt{background-size: 80%;}
+    .about-txt p{font-size: 5.3vw;}
+    .swiper-img{width: 40vw;height: 40vw;}
+    .swiper-txt{padding-left: 4vw;}
+    .swiper-txt .tit{font-size: 16px;}
+    .swiper-txt .info,.swiper-txt .link{font-size: 4.8vw}
+    .swiper-txt .txt{font-size: 14px;}
+    .swiper-pagination{right: 10.5% !important;bottom: 24% !important;}
+    .swiper-pagination-current{font-size: 35px;}
+    .swiper-button-next{right: 0 !important;}
+    .swiper-button-prev{left: 0 !important;}
+    .contact-txt p{font-size: 9.66vw;}
+    .contact-txt p:first-child{font-size: 10vw;}
+}
+
+/*가로값이 480px이상 767px이하 일 때 스타일 적용! 768px이상은 적용 안됨*/  
+@media all and (max-width:767px){ 
+}
+
+/*가로값이 479px이하 일 때 스타일 적용! 480px이상은 적용 안됨*/
+@media all and (max-width:479px){
+}
