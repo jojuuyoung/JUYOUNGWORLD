@@ -172,7 +172,7 @@ section::after{
     z-index: 99;
     width: 49vw;
     height: 49vw;
-    background-image: url(/img/circle_bg.png), url(/img/circle_imog.png);
+    background-image: url(../img/circle_bg.png), url(../img/circle_imog.png);
     background-size: 100%, 40%;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
@@ -275,7 +275,7 @@ section::after{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/img/about_bg.png);
+    background-image: url(../img/about_bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 56%;
@@ -286,7 +286,7 @@ section::after{
     width: 4vw;
     height: 4vw;
     margin: 0 auto;
-    background-image: url(/img/icon_about.png);
+    background-image: url(../img/icon_about.png);
     background-repeat: no-repeat;
     background-size: 100%;
     animation: aboutswing 2s infinite;
@@ -323,7 +323,9 @@ section::after{
 } */
 /* //mark: skill section */
 .skill{
-    background-image: url(/img/skill.png);
+    width: 100%;
+    background-image: url(../img/skill.png);
+    background-size: 100% 100%;
 }
 
 /* //mark: project section */
