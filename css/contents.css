@@ -53,7 +53,7 @@ section::after{
     height: 45px;
     background-color: #fff;
 }
-.title-box p,
+.title-box h1,
 .scroll-text{
     font-family: 'Rubik',sans-serif;
     font-weight: 500;
@@ -322,12 +322,20 @@ section::after{
     letter-spacing: -1px;
 } */
 /* //mark: skill section */
-.skill{
-    width: 100%;
-    background-image: url(../img/skill.png);
-    background-size: 100% 100%;
-}
+.skill-txt{
+    display: flex;
+    
 
+}
+.skill-txt-left{
+    width: 50%;
+    background-color: peachpuff;
+}
+.skill-txt-right{
+    width: 50%;
+
+    background-color: palevioletred;
+}
 /* //mark: project section */
 .swiper-container{
     width: 94vw;
