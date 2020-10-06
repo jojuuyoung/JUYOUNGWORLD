@@ -404,7 +404,7 @@ section::after{
 }
 .swiper-inner.hanssem{
     background-image: url(../img/project_hanssem_bg02.png);
-    background-position: ;
+    background-position: center;
 }
 .swiper-txt{
     padding: 1.5vw;
