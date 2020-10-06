@@ -395,7 +395,7 @@ section::after{
     background-repeat: no-repeat;
 }
 .swiper-inner.stayjungle{
-    background-image: url(../img/project_stayjungle_bg02.jpg);
+    background-image: url(../img/project_stayjungle_bg.jpg);
     background-position: center;
 }
 .swiper-inner.hyundai{
@@ -403,23 +403,16 @@ section::after{
     background-position: bottom;
 }
 .swiper-inner.hanssem{
-    background-image: url(../img/);
+    background-image: url(../img/project_hanssem_bg02.png);
     background-position: ;
 }
-/* .swiper-inner.stayjungle .swiper-txt{
-    background-color: rgba(255,255,255,.5);
-}
-.swiper-inner.stayjungle .swiper-txt p{
-    color: #000;
-} */
 .swiper-txt{
     padding: 1.5vw;
     line-height: 1.35;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(255,255,255,0.5);
 }
 .swiper-txt p{
     text-align: left;
-    color: #fff;
 }
 .swiper-txt .tit{
     margin-bottom: 15px;
