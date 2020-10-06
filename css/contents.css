@@ -322,19 +322,38 @@ section::after{
     letter-spacing: -1px;
 } */
 /* //mark: skill section */
+.skill{
+}
 .skill-txt{
+    position: relative;
+    z-index: 99;
     display: flex;
-    
-
+    justify-content: space-evenly;
+    height: 60%;
 }
 .skill-txt-left{
-    width: 50%;
-    background-color: peachpuff;
+    font-size: 3vw;
+    text-align: right;
+    font-weight: 700;
+    line-height: 1.3;
 }
 .skill-txt-right{
-    width: 50%;
-
-    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.skill-txt-right dl{
+    margin-bottom: 20px;
+}
+.skill-txt-right dt{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.skill-txt-right dd{
+    font-size: 20px;
+    line-height: 1.3;
 }
 /* //mark: project section */
 .swiper-container{
