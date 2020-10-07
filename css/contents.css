@@ -325,27 +325,24 @@ section::after{
     justify-content: space-evenly;
     height: 75%;
 }
-.skill-txt-left{
-    font-size: 5vw;
+.skill-txt-top{
+    font-size: 4.5vw;
     text-align: right;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -5px;
+    color: #333;
 }
-.skill-txt-right{
-    font-size: 5vw;
+.skill-txt-bottom{
+    font-size: 4.5vw;
     text-align: left;
     font-weight: 700;
     line-height: 1.2;
+    color: #333;
 }
-.skill-wave{
-    width: 100%;
-    height: 50px;
-}
-.skill-wave img{
-    opacity: .8;
-    width: 100%;
-    height: 100%;
+.skill-txt-bottom > p{
+    margin-top: 1vw;
+    font-size: 4vw;
 }
 /* .skill-txt-right{
     display: flex;
@@ -408,7 +405,7 @@ section::after{
     background-position: center;
 }
 .swiper-inner.hyundai{
-    background-image: url(../img/project_hyundai_bg02.jpg);
+    background-image: url(../img/project_hyundai_bg03.jpg);
     background-position: bottom;
 }
 .swiper-inner.hanssem{
@@ -418,7 +415,7 @@ section::after{
 .swiper-txt{
     padding: 1.5vw;
     line-height: 1.35;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.3);
 }
 .swiper-txt p{
     text-align: left;
@@ -563,13 +560,12 @@ section::after{
     .about-txt{background-size: 80%;}
     .about-txt p:first-child::before{width: 6vw;height: 6vw;}
     .about-txt p{font-size: 5.3vw;}
-    .swiper-img{width: 40vw;height: 40vw;}
     .swiper-txt{padding-left: 4vw;}
     .swiper-txt .tit{font-size: 16px;}
     .swiper-txt .info,.swiper-txt .link{font-size: 5vw}
     .swiper-txt .txt{font-size: 14px;}
-    .swiper-pagination{right: 10.5% !important;bottom: 24% !important;}
-    .swiper-pagination-current{font-size: 35px !important;}
+    .swiper-pagination{right: -28.5% !important;bottom: 30% !important;}
+    .swiper-pagination-current{font-size: 40px !important;}
     .swiper-button-next{right: 5px !important;}
     .swiper-button-prev{left: 5px !important;}
     .contact-txt p:first-child{font-size: 10vw;}
@@ -578,7 +574,7 @@ section::after{
 
 /*가로값이 480px이상 767px이하 일 때 스타일 적용! 768px이상은 적용 안됨*/  
 @media all and (max-width:767px){
-    .scroll-text{right: -18px;}
+    .scroll-text{right: -25px;}
     .title-box::before{height: 35px;}
     .title-box p{font-size: 15px;}
     .smile-ani {width: 145px;height: 145px;right: -8vw;bottom: -8vw;}
@@ -589,22 +585,19 @@ section::after{
     .section-tit{font-size: 22px;}
     .about-txt p{font-size: 6vw;}
     .swiper-container{width: 90vw;height: 90vh;}
-    .swiper-inner{flex-direction: column;}
-    .swiper-img{width: 100%;height: 50%;}
-    .swiper-img a{width: 100%;height: 100%;}
-    .swiper-img a img{width: 100%;height: 100%;}
-    .swiper-txt{width: 100%;height: 50%;padding: 7vw 8vw;box-sizing: border-box;}
+    .swiper-inner.stayjungle{background-position: right;}
+    .swiper-txt{padding: 5vw 5vw;box-sizing: border-box;background-color: transparent;}
     .swiper-txt .tit{font-size: 18px;}
     .swiper-txt .txt{font-size: 15px;}
     .swiper-txt .info,.swiper-txt .link{font-size: 7.5vw}
-    .swiper-pagination{right: 17vw !important;bottom: 9vw !important;}
-    .swiper-pagination-current{font-size: 30px !important;}
+    .swiper-pagination{right: -25vw !important;bottom: 35vw !important;}
+    .swiper-pagination-current{font-size: 35px !important;}
     .copyright{font-size: 16px;}
 }
 
 /*가로값이 479px이하 일 때 스타일 적용! 480px이상은 적용 안됨*/
 @media all and (max-width:479px){
-    .scroll-text{right: -7%;}
+    .scroll-text{right: -8%;}
     .title-box{top: 10%;}
     .title-box p{font-size: 14px;}
     .smile-ani {width: 120px;height: 120px;right: -11vw;bottom: -10vw;}
@@ -616,13 +609,13 @@ section::after{
     .about-txt p{font-size: 6.2vw;}
     .about-txt p:first-child::before {width: 9vw;height: 9vw;}
     .swiper-container{width: 90vw;height: 88vh;}
-    .swiper-txt{padding: 6vw 7vw;}
-    .swiper-txt .tit{font-size: 16px;}
+    .swiper-txt{padding: 0;}
+    .swiper-txt .tit{font-size: 15px;}
     .swiper-txt .txt{font-size: 14px;}
-    .swiper-txt .info,.swiper-txt .link{font-size: 8.5vw}
-    .swiper-pagination{text-align: left !important; right: 0 !important; bottom: 5vw !important;}
+    .swiper-txt .info,.swiper-txt .link{font-size: 8vw}
+    .swiper-pagination{text-align: right !important; right: 7vw !important; bottom: 24% !important;}
     .swiper-button-next,.swiper-button-prev{width: 20px !important;height: 32px !important;background-size: 20px 32px !important;}
-    .swiper-pagination-current{font-size: 25px !important;padding-left: 8vw;}
+    .swiper-pagination-current{font-size: 30px !important;padding-left: 8vw;}
     .contact-txt p:first-child{font-size: 10.15vw;}
     .contact-txt p{font-size: 9.8vw;}
     .copyright{font-size: 14px;font-weight: 700;}
