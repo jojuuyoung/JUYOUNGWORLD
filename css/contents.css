@@ -401,7 +401,7 @@ section::after{
     background-repeat: no-repeat;
 }
 .swiper-inner.stayjungle{
-    background-image: url(../img/project_stayjungle_bg.jpg);
+    background-image: url(../img/project_stayjungle_bg-min.jpg);
     background-position: center;
 }
 .swiper-inner.hyundai{
@@ -409,7 +409,7 @@ section::after{
     background-position: bottom;
 }
 .swiper-inner.hanssem{
-    background-image: url(../img/project_hanssem_bg02.png);
+    background-image: url(../img/project_hanssem_bg02.jpg);
     background-position: center;
 }
 .swiper-txt{
