@@ -471,6 +471,7 @@ section::after{
 }
 /* 스와이퍼 페이지 숫자뷰 */
 .swiper-pagination{
+    z-index: 999 !important;
     right: -19% !important;
     bottom: 30% !important;
     color: #000 !important;
