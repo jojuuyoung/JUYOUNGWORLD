@@ -375,8 +375,7 @@ section::after{
     height: 98vh;
 }
 .swiper-slide{
-    /* text-align: center;
-    font-size: 18px; */
+    background-size: cover;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,20 +391,64 @@ section::after{
     align-items: center;
 }
 .swiper-slide.stayjungle{
-    background-image: url(../img/project_stayjungle_bg-min.jpg);
+    background-image: url(../img/project_stayjungle_bg.jpg);
     background-position: center;
-    background-size: cover;
 }
-.swiper-slide.hyundai
-.swiper-slide.hanssem
-
-
-
-
-
-
-
-
+.swiper-slide.hyundai{
+    background-image: url(../img/project_hyundai_bg03.jpg);
+    background-position: top;
+}
+.swiper-slide.hanssem{
+    background-image: url(../img/project_hanssem_bg.png);
+    background-position: center;
+}
+.swiper-txt{
+    padding: 2vw;
+    line-height: 1.35;
+    background-color: rgba(0,0,0,0.2);
+}
+.swiper-txt p{
+    color: #fff;
+    text-align: left;
+}
+.swiper-txt .tit{
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-style: italic;
+}
+.swiper-txt .info{
+    font-size: 3vw; /* font-size: 56px; */
+}
+.swiper-txt .link{
+    font-size: 3vw; /* font-size: 56px; */
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+.swiper-txt .link .link-tit {
+    position:relative;
+    display: inline-block;
+}
+.swiper-txt .link .link-tit::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 10px;
+    background-color: #fff;;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+}
+.swiper-txt:hover .link .link-tit::before{
+    width: 100%;
+    transition:width 0.5s; 
+    -webkit-transition:width 0.5s; 
+    -ms-transition:width 0.5s;
+}
+.swiper-txt .txt{
+    margin-top: 20px;
+    font-weight: 500;
+}
 /* 스와이퍼 버튼 */
 .swiper-button-next{
     z-index: 99;
@@ -420,7 +463,7 @@ section::after{
 /* 스와이퍼 페이지 숫자뷰 */
 .swiper-pagination{
     z-index: 999 !important;
-    right: -19% !important;
+    left: 20% !important;
     bottom: 30% !important;
     color: #fff !important;
 }
@@ -502,6 +545,7 @@ section::after{
 /*가로값이 768px이상 1023px이하 일 때 스타일 적용! 1024px이상은 기본 css적용 */
 @media all and (max-width:1023px){
     .smile-ani{width: 160px;height: 160px;right: -5vw;bottom: -5vw;}
+    .scroll-text{right: -15px;}
     .main p{font-size: 17px;}
     .circle-bg{width: 53vw;height: 53vw;background-size: 100%, 40%;}
     .circle-tit{width: 53vw;height: 53vw;font-size: 4.45vw;}
@@ -509,24 +553,22 @@ section::after{
     .about-txt{background-size: 80%;}
     .about-txt p:first-child::before{width: 6vw;height: 6vw;}
     .about-txt p{font-size: 5.3vw;}
-    .swiper-txt{padding-left: 4vw;}
     .swiper-txt .tit{font-size: 16px;}
-    .swiper-txt .info,.swiper-txt .link{font-size: 5vw}
+    .swiper-txt .info{font-size: 5vw;}
+    .swiper-txt .link{font-size: 5vw;}
     .swiper-txt .txt{font-size: 14px;}
-    .swiper-pagination{right: -28.5% !important;bottom: 30% !important;}
+    .swiper-pagination{left: 30% !important;bottom: 30% !important;}
     .swiper-pagination-current{font-size: 40px !important;}
-    .swiper-button-next{right: 5px !important;}
-    .swiper-button-prev{left: 5px !important;}
     .contact-txt p:first-child{font-size: 10vw;}
     .contact-txt p{font-size: 9.66vw;}
 }
 
 /*가로값이 480px이상 767px이하 일 때 스타일 적용! 768px이상은 적용 안됨*/  
 @media all and (max-width:767px){
-    .scroll-text{right: -25px;}
+    .smile-ani {width: 145px;height: 145px;right: -8vw;bottom: -8vw;}
     .title-box::before{height: 35px;}
     .title-box p{font-size: 15px;}
-    .smile-ani {width: 145px;height: 145px;right: -8vw;bottom: -8vw;}
+    .scroll-text{right: -25px;}
     .main p{font-size: 16px;}
     .circle-bg{width: 60vw;height: 60vw;background-size: 100%, 40%;}
     .circle-tit{width: 60vw;height: 60vw;font-size: 5vw;}
@@ -534,36 +576,42 @@ section::after{
     .section-tit{font-size: 22px;}
     .about-txt p{font-size: 6vw;}
     .swiper-container{width: 90vw;height: 90vh;}
-    .swiper-inner.stayjungle{background-position: right;}
-    .swiper-txt{padding: 5vw 5vw;box-sizing: border-box;background-color: transparent;}
+    .swiper-slide.stayjungle{background-position: left;}
+    .swiper-inner.hanssem{background-position: center;}
+    .swiper-txt{padding: 4vw 4vw;box-sizing: border-box;}
     .swiper-txt .tit{font-size: 18px;}
     .swiper-txt .txt{font-size: 15px;}
-    .swiper-txt .info,.swiper-txt .link{font-size: 7.5vw}
-    .swiper-pagination{right: -25vw !important;bottom: 35vw !important;}
+    .swiper-txt .info{font-size: 6vw;}
+    .swiper-txt .link{font-size: 6vw;}
+    .swiper-button-next{right: 10px !important;}
+    .swiper-button-prev{left: 10px !important;}
+    .swiper-pagination{left: 30% !important;bottom: 22% !important;}
     .swiper-pagination-current{font-size: 35px !important;}
     .copyright{font-size: 16px;}
 }
 
 /*가로값이 479px이하 일 때 스타일 적용! 480px이상은 적용 안됨*/
 @media all and (max-width:479px){
-    .scroll-text{right: -8%;}
+    .smile-ani {width: 120px;height: 120px;right: -11vw;bottom: -10vw;}
     .title-box{top: 10%;}
     .title-box p{font-size: 14px;}
-    .smile-ani {width: 120px;height: 120px;right: -11vw;bottom: -10vw;}
+    .scroll-text{right: -8%;}
     .main-txt{display: none;}
     .main-txt02{top: 20%;}
     .circle-bg{width: 65vw;height: 65vw;background-size: 100%, 40%;}
     .circle-tit{width: 65vw;height: 65vw;font-size: 5.4vw;}
     .section-tit{font-size: 18px;top: 2%;}
-    .about-txt p{font-size: 6.2vw;}
     .about-txt p:first-child::before {width: 9vw;height: 9vw;}
+    .about-txt p{font-size: 6.2vw;}
     .swiper-container{width: 90vw;height: 88vh;}
-    .swiper-txt{padding: 0;}
+    .swiper-txt{padding-left: 8vw;background-color: transparent;}
     .swiper-txt .tit{font-size: 15px;}
+    .swiper-txt .info{font-size: 6vw;}
+    .swiper-txt .link{font-size: 6vw;-webkit-text-stroke-width: 1px;}
+    .swiper-txt .link .link-tit::before{height: 5px;}
     .swiper-txt .txt{font-size: 14px;}
-    .swiper-txt .info,.swiper-txt .link{font-size: 8vw}
-    .swiper-pagination{text-align: right !important; right: 7vw !important; bottom: 24% !important;}
-    .swiper-button-next,.swiper-button-prev{width: 20px !important;height: 32px !important;background-size: 20px 32px !important;}
+    .swiper-button-next{right: 0 !important;}
+    .swiper-button-prev{left: 0 !important;}
     .swiper-pagination-current{font-size: 30px !important;padding-left: 8vw;}
     .contact-txt p:first-child{font-size: 10.15vw;}
     .contact-txt p{font-size: 9.8vw;}
