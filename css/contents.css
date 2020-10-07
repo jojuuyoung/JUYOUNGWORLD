@@ -375,8 +375,8 @@ section::after{
     height: 98vh;
 }
 .swiper-slide{
-    text-align: center;
-    font-size: 18px;
+    /* text-align: center;
+    font-size: 18px; */
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -391,73 +391,21 @@ section::after{
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-inner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100% !important;
-    height: 100% !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.swiper-inner.stayjungle{
+.swiper-slide.stayjungle{
     background-image: url(../img/project_stayjungle_bg-min.jpg);
     background-position: center;
+    background-size: cover;
 }
-.swiper-inner.hyundai{
-    background-image: url(../img/project_hyundai_bg03.jpg);
-    background-position: bottom;
-}
-.swiper-inner.hanssem{
-    background-image: url(../img/project_hanssem_bg02.jpg);
-    background-position: center;
-}
-.swiper-txt{
-    padding: 1.5vw;
-    line-height: 1.35;
-    background-color: rgba(255,255,255,0.3);
-}
-.swiper-txt p{
-    text-align: left;
-}
-.swiper-txt .tit{
-    margin-bottom: 15px;
-    font-weight: 900;
-    font-style: italic;
-}
-.swiper-txt .info{
-    font-size: 3vw; /* font-size: 56px; */
-}
-.swiper-txt .link{
-    font-size: 3vw; /* font-size: 56px; */
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-}
-.swiper-txt .link .link-tit {
-    position:relative;
-    display: inline-block;
-}
-.swiper-txt .link .link-tit::before{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 10px;
-    background-color: #252422;;
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-}
-.swiper-txt:hover .link .link-tit::before{
-    width: 100%;
-    transition:width 0.5s; 
-    -webkit-transition:width 0.5s; 
-    -ms-transition:width 0.5s;
-}
-.swiper-txt .txt{
-    margin-top: 20px;
-    font-weight: 500;
-}
+.swiper-slide.hyundai
+.swiper-slide.hanssem
+
+
+
+
+
+
+
+
 /* 스와이퍼 버튼 */
 .swiper-button-next{
     z-index: 99;
@@ -474,14 +422,14 @@ section::after{
     z-index: 999 !important;
     right: -19% !important;
     bottom: 30% !important;
-    color: #000 !important;
+    color: #fff !important;
 }
 .swiper-pagination-current{
     font-size: 45px !important;
 }
 .swiper-pagination-current,
 .swiper-pagination-total{
-    color: #000 !important;
+    color: #fff !important;
     font-weight: 700 !important;
     font-family: 'Rubik','NotoKr',sans-serif !important;
 }

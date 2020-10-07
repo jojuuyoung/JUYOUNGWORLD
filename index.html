@@ -18,8 +18,8 @@
     <script src="js/fullpage.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/fullpage.css" type="text/css">
     <!-- Swiper -->
-    <script src="js/swiper.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+    <script src="js/swiper-bundle.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css">
 </head>
 <body>
     <!-- 주영월드 title bar -->
@@ -126,66 +126,32 @@
         <!-- 포트폴리오 project section -->
         <section class="section project" id="project">
             <h2 class="section-tit">Ju Young's Project</h2>
-            <!-- swiper-container -->
+            <!-- Swiper -->
             <div class="swiper-container">
-                <!-- swiper-wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- swiper-slide 스테이정글 -->
-                    <div class="swiper-slide">
-                        <div class="swiper-inner stayjungle">
-                            <div class="swiper-txt">
-                                <p class="tit">project website #01</p>
-                                <p class="info">유전자 맞춤 도시락<br>웹사이트 구축</p>
-                                <p class="link">
-                                    <a href="https://www.stayjungle.com/" title="스테이정글 바로가기" target="blank" class="link-tit">스테이정글 .</a>
-                                </p>
-                                <p class="txt">responsive & web & HTML5 & CSS3 & JS</p>
-                            </div>
-                        </div>
+                    <div class="swiper-slide stayjungle">
+                        <div class="swiper-txt"></div>
                     </div>
-                    <!-- swiper-slide 현대엘레베이터 -->
-                    <div class="swiper-slide">
-                        <div class="swiper-inner hyundai">
-                            <div class="swiper-txt">
-                                <p class="tit">project website #02</p>
-                                <p class="info">현대 엘리베이터<br>관리자 웹사이트 구축</p>
-                                <p class="link">
-                                    <a href="#" title="스테이정글 바로가기" target="blank" class="link-tit">현대엘리베이터 .</a>
-                                </p>
-                                <p class="txt">responsive & web & HTML5 & CSS3 & JS</p>
-                            </div>
-                        </div>
+                    <div class="swiper-slide hyundai">
+                        <div class="swiper-txt"></div>
                     </div>
-                    <!-- swiper-slide 한샘이펙스 -->
-                    <div class="swiper-slide">
-                        <div class="swiper-inner hanssem">
-                            <div class="swiper-txt">
-                                <p class="tit">copy website #01</p>
-                                <p class="info">개인 포트폴리오용</p>
-                                <p class="link">
-                                    <a href="http://jojuuyoung.dothome.co.kr/" title="스테이정글 바로가기" target="blank" class="link-tit">한샘이펙스 .</a>
-                                </p>
-                                <p class="txt">responsive & web & HTML5 & CSS3 & JS</p>
-                            </div>
-                        </div>
+                    <div class="swiper-slide hanssem">
+                        <div class="swiper-txt"></div>
                     </div>
                 </div>
-                <!--// swiper-wrapper -->
-
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-black"></div>
-                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
             </div>
-            <!--// swiper-container -->
         </section>
         <!--// 포트폴리오 project section -->
 
         <!-- Initialize Swiper -->
+        <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper('.swiper-container', {
-                //loop:true,
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'fraction',
