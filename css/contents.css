@@ -391,15 +391,15 @@ section::after{
     align-items: center;
 }
 .swiper-slide.stayjungle{
-    background-image: url(../img/project_stayjungle_bg.jpg);
+    background-image: url(../img/project_stayjungle_bg_min.jpg);
     background-position: center;
 }
 .swiper-slide.hyundai{
-    background-image: url(../img/project_hyundai_bg03.jpg);
+    background-image: url(../img/project_hyundai_bg_min.jpg);
     background-position: top;
 }
 .swiper-slide.hanssem{
-    background-image: url(../img/project_hanssem_bg.png);
+    background-image: url(../img/project_hanssem_bg_min.jpg);
     background-position: center;
 }
 .swiper-txt{
@@ -576,13 +576,14 @@ section::after{
     .section-tit{font-size: 22px;}
     .about-txt p{font-size: 6vw;}
     .swiper-container{width: 90vw;height: 90vh;}
-    .swiper-slide.stayjungle{background-position: left;}
+    .swiper-slide.stayjungle{background-position: inherit;}
     .swiper-inner.hanssem{background-position: center;}
     .swiper-txt{padding: 4vw 4vw;box-sizing: border-box;}
     .swiper-txt .tit{font-size: 18px;}
     .swiper-txt .txt{font-size: 15px;}
     .swiper-txt .info{font-size: 6vw;}
     .swiper-txt .link{font-size: 6vw;}
+    .swiper-txt .link .link-tit::before{height: 8px;}
     .swiper-button-next{right: 10px !important;}
     .swiper-button-prev{left: 10px !important;}
     .swiper-pagination{left: 30% !important;bottom: 22% !important;}
