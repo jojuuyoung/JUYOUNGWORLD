@@ -451,12 +451,12 @@ section::after{
 }
 /* 스와이퍼 버튼 */
 .swiper-button-next{
-    z-index: 99;
+    z-index: 999;
     right: 40px !important;
     cursor: url(../img/cursor-hand.png),auto !important;
 }
 .swiper-button-prev{
-    z-index: 99;
+    z-index: 999;
     left: 40px !important;
     cursor: url(../img/cursor-hand.png),auto !important;
 }
